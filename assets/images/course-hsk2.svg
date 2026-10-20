@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <defs>
+    <linearGradient id="bgHsk2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="100%" stop-color="#fef3c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" rx="16" fill="url(#bgHsk2)"/>
+  <circle cx="340" cy="50" r="75" fill="#fde68a" opacity="0.6"/>
+  <circle cx="60" cy="150" r="55" fill="#fecaca" opacity="0.5"/>
+  <text x="200" y="95" font-family="'Noto Serif SC', serif" font-size="48" font-weight="bold" fill="#b45309" text-anchor="middle">HSK 3 - 4</text>
+  <text x="200" y="135" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="600" fill="#4b5563" text-anchor="middle">Bứt Phá Giao Tiếp & Luyện Thi</text>
+  <text x="200" y="165" font-family="'Noto Serif SC', serif" font-size="18" fill="#c8102e" text-anchor="middle">进阶汉语 · 融会贯通</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" width="280" height="60">
+  <defs>
+    <linearGradient id="logoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c8102e"/>
+      <stop offset="100%" stop-color="#960c22"/>
+    </linearGradient>
+  </defs>
+  <!-- Biểu tượng con dấu vuông đỏ viền vàng -->
+  <g transform="translate(6, 6)">
+    <rect x="0" y="0" width="48" height="48" rx="10" fill="#d4af37"/>
+    <rect x="2.5" y="2.5" width="43" height="43" rx="8" fill="url(#logoBg)"/>
+    <text x="24" y="31" font-family="'Noto Serif SC', serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">华语</text>
+  </g>
+  <!-- Dòng chữ thương hiệu -->
+  <text x="68" y="38" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="24" font-weight="600" fill="#1f2937">Hoa Ngữ</text>
+  <text x="176" y="38" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="24" font-weight="800" fill="#c8102e">Tinh Hoa</text>
+</svg>

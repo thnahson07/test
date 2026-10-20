@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Website học tiếng Trung trực tuyến hiện đại 100% HTML5 & CSS3 thuần - Từ vựng HSK, bộ thẻ flashcard 3D lật tương tác và khóa học tiếng Trung.">
+  <meta name="keywords"
+    content="học tiếng Trung, tiếng Trung giao tiếp, từ vựng HSK, flashcard tiếng Trung, khóa học HSK">
+  <meta name="author" content="Phan Thanh Sơn">
+  <title>Hoa Ngữ Tinh Hoa - Học Tiếng Trung Cơ Bản & Flashcard 3D</title>
+
+  <!-- Google Fonts: Hán tự & Latinh hiện đại -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons (Biểu tượng thuần CSS) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Animate.css CDN (Thư viện hiệu ứng CSS thuần) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Custom CSS Thuần 100% -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==================== HEADER & NAVIGATION (CSS THUẦN) ==================== -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="Trang chủ Hoa Ngữ Tinh Hoa">
+        <span class="logo-chinese">华语</span>
+        <span class="logo-text">Hoa Ngữ <strong>Tinh Hoa</strong></span>
+      </a>
+
+      <!-- Kỹ thuật CSS Checkbox Hack cho Mobile Menu (100% không dùng JS) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Mở danh mục điều hướng">
+        <i class="fa-solid fa-bars icon-open"></i>
+        <i class="fa-solid fa-xmark icon-close"></i>
+      </label>
+
+      <!-- Thanh điều hướng ngữ nghĩa <nav> -->
+      <nav class="main-navigation" aria-label="Thanh điều hướng chính">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link"><i class="fa-solid fa-house"></i> Trang Chủ</a></li>
+          <li class="nav-item"><a href="#features" class="nav-link"><i class="fa-solid fa-star"></i> Đặc Điểm</a></li>
+          <li class="nav-item"><a href="#vocabulary" class="nav-link"><i class="fa-solid fa-book-open"></i> Từ Vựng
+              HSK</a></li>
+          <li class="nav-item"><a href="#flashcards" class="nav-link"><i class="fa-solid fa-clone"></i> Thẻ
+              Flashcard</a></li>
+          <li class="nav-item"><a href="#courses" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Khóa
+              Học</a></li>
+          <li class="nav-item"><a href="#trust" class="nav-link"><i class="fa-solid fa-shield-halved"></i> Uy Tín</a>
+          </li>
+          <li class="nav-item"><a href="#contact" class="nav-link nav-btn-cta"><i class="fa-solid fa-paper-plane"></i>
+              Đăng Ký Ngay</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main id="main-content">
+
+    <!-- SECTION 1: HERO SECTION GIỚI THIỆU -->
+    <section class="hero-section" id="hero" data-aos="fade-up" aria-labelledby="hero-title">
+      <div class="hero-wrapper">
+        <div class="hero-content">
+          <span class="hero-badge animate__animated animate__fadeInDown">
+            <i class="fa-solid fa-fire"></i> Lộ trình chinh phục HSK 1 - HSK 6 cấp tốc
+          </span>
+          <h1 class="hero-title animate__animated animate__fadeInLeft" id="hero-title">
+            Chinh Phục <span class="highlight-text">Tiếng Trung</span> Dễ Dàng Cùng Flashcard Tương Tác
+          </h1>
+          <p class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+            Học chuẩn ngữ âm, nhớ sâu chữ Hán qua chiết tự tượng hình và phương pháp phản xạ tự nhiên. Bắt đầu hành
+            trình thành thạo tiếng Hoa ngay hôm nay!
+          </p>
+          <div class="hero-actions animate__animated animate__zoomIn animate__delay-1s">
+            <a href="#flashcards" class="btn btn-primary btn-cta">
+              <i class="fa-solid fa-play"></i> Trải Nghiệm Flashcard
+            </a>
+            <a href="#vocabulary" class="btn btn-secondary">
+              <i class="fa-solid fa-compass"></i> Khám Phá Từ Vựng
+            </a>
+          </div>
+
+          <!-- Danh sách thống kê ngữ nghĩa <ul> -->
+          <ul class="hero-stats animate__animated animate__fadeInUp animate__delay-1s">
+            <li class="stat-item">
+              <strong class="stat-number">10.000+</strong>
+              <span class="stat-label">Học viên tin tưởng</span>
+            </li>
+            <li class="stat-divider" aria-hidden="true"></li>
+            <li class="stat-item">
+              <strong class="stat-number">1.500+</strong>
+              <span class="stat-label">Từ vựng & Thẻ 3D</span>
+            </li>
+            <li class="stat-divider" aria-hidden="true"></li>
+            <li class="stat-item">
+              <strong class="stat-number">98%</strong>
+              <span class="stat-label">Đậu chứng chỉ HSK</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Khung minh họa Hán tự & triện son Á Đông -->
+        <figure class="hero-visual animate__animated animate__fadeInRight">
+          <div class="hero-card-decoration">
+            <div class="chinese-seal">精 华</div>
+            <div class="hero-hanzi-display">
+              <span class="pinyin-display">xué xí zhōng wén</span>
+              <span class="character-display">学习中文</span>
+              <span class="meaning-display">"Học tiếng Trung Quốc"</span>
+            </div>
+            <div class="audio-badge">
+              <span class="badge-tag"><i class="fa-solid fa-certificate"></i> Chuẩn Giọng Bắc Kinh</span>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ĐẶC ĐIỂM NỔI BẬT (FEATURES) -->
+    <section class="features-section" id="features" data-aos="fade-up" aria-labelledby="features-title">
+      <div class="section-container">
+        <header class="section-header">
+          <span class="section-tag">Ưu Điểm Vượt Trội</span>
+          <h2 class="section-title" id="features-title">Phương Pháp Học Tiếng Trung Hiện Đại</h2>
+          <p class="section-description">Kết hợp phương pháp ghi nhớ Spaced Repetition và công nghệ trực quan sinh động.
+          </p>
+        </header>
+
+        <div class="features-grid">
+          <article class="feature-card" data-aos="zoom-in">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3 class="feature-title">Flashcard 3D Thông Minh</h3>
+            <p class="feature-desc">Ghi nhớ từ vựng qua thẻ lật 2 mặt kèm phiên âm Pinyin, Hán tự to rõ và ví dụ ngữ
+              cảnh thực tế.</p>
+          </article>
+
+          <article class="feature-card" data-aos="zoom-in">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <h3 class="feature-title">Phiên Âm & Thanh Điệu</h3>
+            <p class="feature-desc">Hệ thống ký hiệu thanh điệu Pinyin chuẩn xác, giúp người học phát âm tròn vành rõ
+              chữ.</p>
+          </article>
+
+          <article class="feature-card" data-aos="zoom-in">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-pen-nib"></i>
+            </div>
+            <h3 class="feature-title">Chiết Tự & 214 Bộ Thủ</h3>
+            <p class="feature-desc">Giải mã cấu tạo chữ Hán tượng hình, biến việc học chữ Hán trở thành câu chuyện thú
+              vị, nhớ lâu.</p>
+          </article>
+
+          <article class="feature-card" data-aos="zoom-in">
+            <div class="feature-icon-wrapper">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <h3 class="feature-title">Bám Sát Chuẩn HSK 3.0</h3>
+            <p class="feature-desc">Hệ thống từ vựng và bài tập phân chia rõ ràng theo từng cấp độ từ HSK 1 đến HSK 6
+              quốc tế.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: TỪ VỰNG CƠ BẢN (VOCABULARY) VỚI BỘ LỌC CSS THUẦN -->
+    <section class="vocabulary-section" id="vocabulary" data-aos="fade-up" aria-labelledby="vocab-title">
+      <div class="section-container">
+        <header class="section-header">
+          <span class="section-tag">Kho Từ Vựng HSK 1 - HSK 2</span>
+          <h2 class="section-title" id="vocab-title">Từ Vựng Tiếng Trung Thông Dụng Hàng Ngày</h2>
+          <p class="section-description">Tra cứu, xem phiên âm Pinyin và mẫu câu giao tiếp cơ bản theo từng chủ đề thực
+            tế.</p>
+        </header>
+
+        <!-- Kỹ thuật Radio Button Hack lọc danh mục 100% bằng CSS Thuần -->
+        <input type="radio" name="vocab-filter" id="filter-all" class="filter-radio" checked>
+        <input type="radio" name="vocab-filter" id="filter-greeting" class="filter-radio">
+        <input type="radio" name="vocab-filter" id="filter-daily" class="filter-radio">
+        <input type="radio" name="vocab-filter" id="filter-study" class="filter-radio">
+        <input type="radio" name="vocab-filter" id="filter-food" class="filter-radio">
+
+        <!-- Thanh Tabs chuyển danh mục bằng <label> -->
+        <nav class="vocab-filter-nav" aria-label="Bộ lọc từ vựng tiếng Trung">
+          <label for="filter-all" class="filter-btn filter-btn-all">Tất Cả</label>
+          <label for="filter-greeting" class="filter-btn filter-btn-greeting">Chào Hỏi</label>
+          <label for="filter-daily" class="filter-btn filter-btn-daily">Đời Sống</label>
+          <label for="filter-study" class="filter-btn filter-btn-study">Học Tập</label>
+          <label for="filter-food" class="filter-btn filter-btn-food">Ẩm Thực</label>
+        </nav>
+
+        <!-- Lưới danh sách thẻ từ vựng semantic <article> -->
+        <div class="vocab-grid">
+
+          <article class="vocab-card card-greeting" data-category="greeting" data-aos="fade-up">
+            <div class="vocab-header">
+              <span class="vocab-level">HSK 1</span>
+              <span class="vocab-tag-small"><i class="fa-solid fa-comment-dots"></i> Chào hỏi</span>
+            </div>
+            <div class="vocab-hanzi">你好</div>
+            <div class="vocab-pinyin">nǐ hǎo</div>
+            <p class="vocab-vietnamese">Xin chào</p>
+            <div class="vocab-example">
+              <span class="ex-cn">你好，很高兴认识你！</span>
+              <span class="ex-vn">Xin chào, rất vui được làm quen với bạn!</span>
+            </div>
+          </article>
+
+          <article class="vocab-card card-greeting" data-category="greeting" data-aos="fade-up">
+            <div class="vocab-header">
+              <span class="vocab-level">HSK 1</span>
+              <span class="vocab-tag-small"><i class="fa-solid fa-comment-dots"></i> Cảm ơn</span>
+            </div>
+            <div class="vocab-hanzi">谢谢</div>
+            <div class="vocab-pinyin">xiè xie</div>
+            <p class="vocab-vietnamese">Cảm ơn</p>
+            <div class="vocab-example">
+              <span class="ex-cn">非常感谢你的热情帮助！</span>
+              <span class="ex-vn">Vô cùng cảm ơn sự giúp đỡ của bạn!</span>
+            </div>
+          </article>
+
+          <article class="vocab-card card-greeting" data-category="greeting" data-aos="fade-up">
+            <div class="vocab-header">
+              <span class="vocab-level">HSK 1</span>
+              <span class="vocab-tag-small"><i class="fa-solid fa-comment-dots"></i> Tạm biệt</span>
+            </div>
+            <div class="vocab-hanzi">再见</div>
+            <div class="vocab-pinyin">zài jiàn</div>
+            <p class="vocab-vietnamese">Tạm biệt</p>
+            <div class="vocab-example">
+              <span class="ex-cn">明天学校再见！</span>
+              <span class="ex-vn">Hẹn gặp lại ngày mai ở trường!</span>
+            </div>
+          </article>
+
+          <article class="vocab-card card-daily" data-category="daily" data-aos="fade-up">
+            <div class="vocab-header">
+              <span class="vocab-level">HSK 1</span>
+              <span class="vocab-tag-small"><i class="fa-solid fa-user-group"></i> Đời sống</span>
+            </div>
+            <div class="vocab-hanzi">朋友</div>
+            <div class="vocab-pinyin">péng you</div>
+            <p class="vocab-vietnamese">Bạn bè, người bạn</p>
+            <div class="vocab-example">
+              <span class="ex-cn">我们是一辈子的好朋友。</span>
+              <span class="ex-vn">Chúng ta là bạn tốt cả đời.</span>
+            </div>
+          </article>
+
+          <article class="vocab-card card-daily" data-category="daily" data-aos="fade-up">
+            <div class="vocab-header">
+              <span class="vocab-level">HSK 1</span>
+              <span class="vocab-tag-small"><i class="fa-solid fa-house"></i> Gia đình</span>
+            </div>
+            <div class="vocab-hanzi">家</div>
+            <div class="vocab-pinyin">jiā</div>
+            <p class="vocab-vietnamese">Gia đình, nhà</p>
+            <div class="vocab-example">
+              <span class="ex-cn">我家有四口人。</span>
+              <span class="ex-vn">Gia đình tôi có bốn người.</span>
+            </div>
+          </article>
+
+          <article class="vocab-card card-study" data-category="study" data-aos="fade-up">
+            <div class="vocab-header">
+              <span class="vocab-level">HSK 1</span>
+              <span class="vocab-tag-small"><i class="fa-solid fa-chalkboard-user"></i> Học tập</span>
+            </div>
+            <div class="vocab-hanzi">老师</div>
+            <div class="vocab-pinyin">lǎo shī</div>
+            <p class="vocab-vietnamese">Thầy cô giáo</p>
+            <div class="vocab-example">
+              <span class="ex-cn">李老师教我们汉语。</span>
+              <span class="ex-vn">Thầy Lý dạy chúng tôi tiếng Hán.</span>
+            </div>
+          </article>
+
+          <article class="vocab-card card-study" data-category="study" data-aos="fade-up">
+            <div class="vocab-header">
+              <span class="vocab-level">HSK 2</span>
+              <span class="vocab-tag-small"><i class="fa-solid fa-file-pen"></i> Thi cử</span>
+            </div>
+            <div class="vocab-hanzi">考试</div>
+            <div class="vocab-pinyin">kǎo shì</div>
+            <p class="vocab-vietnamese">Thi cử, kiểm tra</p>
+            <div class="vocab-example">
+              <span class="ex-cn">我准备参加HSK考试。</span>
+              <span class="ex-vn">Tôi chuẩn bị tham gia kỳ thi HSK.</span>
+            </div>
+          </article>
+
+          <article class="vocab-card card-food" data-category="food" data-aos="fade-up">
+            <div class="vocab-header">
+              <span class="vocab-level">HSK 1</span>
+              <span class="vocab-tag-small"><i class="fa-solid fa-mug-hot"></i> Đồ uống</span>
+            </div>
+            <div class="vocab-hanzi">喝茶</div>
+            <div class="vocab-pinyin">hē chá</div>
+            <p class="vocab-vietnamese">Uống trà</p>
+            <div class="vocab-example">
+              <span class="ex-cn">中国人都喜欢喝热茶。</span>
+              <span class="ex-vn">Người Trung Quốc đều thích uống trà nóng.</span>
+            </div>
+          </article>
+
+          <article class="vocab-card card-food" data-category="food" data-aos="fade-up">
+            <div class="vocab-header">
+              <span class="vocab-level">HSK 2</span>
+              <span class="vocab-tag-small"><i class="fa-solid fa-utensils"></i> Món ngon</span>
+            </div>
+            <div class="vocab-hanzi">好吃</div>
+            <div class="vocab-pinyin">hǎo chī</div>
+            <p class="vocab-vietnamese">Ngon miệng, ngon lành</p>
+            <div class="vocab-example">
+              <span class="ex-cn">这道北京烤鸭真好吃！</span>
+              <span class="ex-vn">Món vịt quay Bắc Kinh này ngon thật!</span>
+            </div>
+          </article>
+
+          <article class="vocab-card card-daily" data-category="daily" data-aos="fade-up">
+            <div class="vocab-header">
+              <span class="vocab-level">HSK 1</span>
+              <span class="vocab-tag-small"><i class="fa-solid fa-earth-asia"></i> Quốc gia</span>
+            </div>
+            <div class="vocab-hanzi">中国</div>
+            <div class="vocab-pinyin">zhōng guó</div>
+            <p class="vocab-vietnamese">Trung Quốc</p>
+            <div class="vocab-example">
+              <span class="ex-cn">我非常喜欢中国文化。</span>
+              <span class="ex-vn">Tôi rất yêu thích văn hóa Trung Quốc.</span>
+            </div>
+          </article>
+
+          <article class="vocab-card card-study" data-category="study" data-aos="fade-up">
+            <div class="vocab-header">
+              <span class="vocab-level">HSK 1</span>
+              <span class="vocab-tag-small"><i class="fa-solid fa-user-graduate"></i> Người học</span>
+            </div>
+            <div class="vocab-hanzi">学生</div>
+            <div class="vocab-pinyin">xué sheng</div>
+            <p class="vocab-vietnamese">Học sinh, sinh viên</p>
+            <div class="vocab-example">
+              <span class="ex-cn">他是一名优秀的大学生。</span>
+              <span class="ex-vn">Anh ấy là một sinh viên đại học ưu tú.</span>
+            </div>
+          </article>
+
+          <article class="vocab-card card-food" data-category="food" data-aos="fade-up">
+            <div class="vocab-header">
+              <span class="vocab-level">HSK 1</span>
+              <span class="vocab-tag-small"><i class="fa-solid fa-bowl-rice"></i> Món ăn</span>
+            </div>
+            <div class="vocab-hanzi">米饭</div>
+            <div class="vocab-pinyin">mǐ fàn</div>
+            <p class="vocab-vietnamese">Cơm trắng</p>
+            <div class="vocab-example">
+              <span class="ex-cn">中午我们一起吃米饭吧。</span>
+              <span class="ex-vn">Buổi trưa chúng ta cùng ăn cơm trắng nhé.</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: BỘ THẺ FLASHCARD 3D TƯƠNG TÁC (100% CSS3 THUẦN) -->
+    <section class="flashcard-section" id="flashcards" data-aos="fade-up" aria-labelledby="flashcard-title">
+      <div class="section-container">
+        <header class="section-header">
+          <span class="section-tag">Thực Hành Ghi Nhớ</span>
+          <h2 class="section-title" id="flashcard-title">Bộ Thẻ Flashcard 3D Lật Hai Mặt (Pure CSS3)</h2>
+          <p class="section-description">Di chuột (hoặc chạm/click vào thẻ) để lật 180° xem chi tiết phiên âm, bộ thủ và
+            ngữ cảnh câu.</p>
+        </header>
+
+        <!-- Lưới thẻ Flashcard 3D lật 2 mặt bằng CSS thuần -->
+        <div class="flashcards-3d-grid">
+
+          <!-- THẺ 1: 你好 -->
+          <div class="flashcard-box">
+            <input type="checkbox" id="fc-check-1" class="flashcard-toggle" hidden>
+            <label for="fc-check-1" class="flashcard-flipper" aria-label="Thẻ từ vựng Ni hao">
+              <!-- Mặt trước thẻ -->
+              <div class="flashcard-front">
+                <div class="card-badge-top">
+                  <span class="hsk-badge">HSK 1</span>
+                  <span class="flip-hint"><i class="fa-solid fa-rotate"></i> Chạm / Rê chuột để lật</span>
+                </div>
+                <div class="card-body-front">
+                  <span class="fc-pinyin">nǐ hǎo</span>
+                  <span class="fc-hanzi">你好</span>
+                  <span class="fc-radical">Bộ thủ: 亻(Nhân đứng)</span>
+                </div>
+                <div class="card-footer-front">
+                  <span class="fc-tag-action"><i class="fa-solid fa-circle-question"></i> Mặt trước: Chữ Hán &
+                    Pinyin</span>
+                </div>
+              </div>
+              <!-- Mặt sau thẻ -->
+              <div class="flashcard-back">
+                <div class="card-badge-top">
+                  <span class="hsk-badge hsk-badge-gold">Giải Nghĩa</span>
+                  <span class="flip-hint"><i class="fa-solid fa-check"></i> Đang xem nghĩa</span>
+                </div>
+                <div class="card-body-back">
+                  <h3 class="fc-meaning">Xin chào, chào bạn</h3>
+                  <p class="fc-part-of-speech">Từ loại: Đại từ / Thán từ</p>
+                  <div class="fc-example-box">
+                    <p class="fc-ex-cn">你好，很高兴认识你！</p>
+                    <p class="fc-ex-pinyin">Nǐ hǎo, hěn gāoxìng rènshí nǐ!</p>
+                    <p class="fc-ex-vn">Xin chào, rất vui được làm quen với bạn!</p>
+                  </div>
+                </div>
+                <div class="card-footer-back">
+                  <span class="memory-tip"><i class="fa-regular fa-lightbulb"></i> Mẹo nhớ: Bạn (你) an lành, tốt đẹp
+                    (好)</span>
+                </div>
+              </div>
+            </label>
+          </div>
+
+          <!-- THẺ 2: 谢谢 -->
+          <div class="flashcard-box">
+            <input type="checkbox" id="fc-check-2" class="flashcard-toggle" hidden>
+            <label for="fc-check-2" class="flashcard-flipper" aria-label="Thẻ từ vựng Xie xie">
+              <div class="flashcard-front">
+                <div class="card-badge-top">
+                  <span class="hsk-badge">HSK 1</span>
+                  <span class="flip-hint"><i class="fa-solid fa-rotate"></i> Chạm / Rê chuột để lật</span>
+                </div>
+                <div class="card-body-front">
+                  <span class="fc-pinyin">xiè xie</span>
+                  <span class="fc-hanzi">谢谢</span>
+                  <span class="fc-radical">Bộ thủ: 讠(Ngôn) & 身(Thân)</span>
+                </div>
+                <div class="card-footer-front">
+                  <span class="fc-tag-action"><i class="fa-solid fa-circle-question"></i> Mặt trước: Chữ Hán &
+                    Pinyin</span>
+                </div>
+              </div>
+              <div class="flashcard-back">
+                <div class="card-badge-top">
+                  <span class="hsk-badge hsk-badge-gold">Giải Nghĩa</span>
+                  <span class="flip-hint"><i class="fa-solid fa-check"></i> Đang xem nghĩa</span>
+                </div>
+                <div class="card-body-back">
+                  <h3 class="fc-meaning">Cảm ơn, cảm tạ</h3>
+                  <p class="fc-part-of-speech">Từ loại: Động từ</p>
+                  <div class="fc-example-box">
+                    <p class="fc-ex-cn">非常感谢你的热情帮助！</p>
+                    <p class="fc-ex-pinyin">Fēicháng gǎnxiè nǐ de rèqíng bāngzhù!</p>
+                    <p class="fc-ex-vn">Vô cùng cảm ơn sự giúp đỡ nhiệt tình của bạn!</p>
+                  </div>
+                </div>
+                <div class="card-footer-back">
+                  <span class="memory-tip"><i class="fa-regular fa-lightbulb"></i> Mẹo nhớ: Lời nói (讠) từ thân mình (身)
+                    khi biết ơn</span>
+                </div>
+              </div>
+            </label>
+          </div>
+
+          <!-- THẺ 3: 再见 -->
+          <div class="flashcard-box">
+            <input type="checkbox" id="fc-check-3" class="flashcard-toggle" hidden>
+            <label for="fc-check-3" class="flashcard-flipper" aria-label="Thẻ từ vựng Zai jian">
+              <div class="flashcard-front">
+                <div class="card-badge-top">
+                  <span class="hsk-badge">HSK 1</span>
+                  <span class="flip-hint"><i class="fa-solid fa-rotate"></i> Chạm / Rê chuột để lật</span>
+                </div>
+                <div class="card-body-front">
+                  <span class="fc-pinyin">zài jiàn</span>
+                  <span class="fc-hanzi">再见</span>
+                  <span class="fc-radical">Bộ thủ: 见 (Kiến - trông thấy)</span>
+                </div>
+                <div class="card-footer-front">
+                  <span class="fc-tag-action"><i class="fa-solid fa-circle-question"></i> Mặt trước: Chữ Hán &
+                    Pinyin</span>
+                </div>
+              </div>
+              <div class="flashcard-back">
+                <div class="card-badge-top">
+                  <span class="hsk-badge hsk-badge-gold">Giải Nghĩa</span>
+                  <span class="flip-hint"><i class="fa-solid fa-check"></i> Đang xem nghĩa</span>
+                </div>
+                <div class="card-body-back">
+                  <h3 class="fc-meaning">Tạm biệt, hẹn gặp lại</h3>
+                  <p class="fc-part-of-speech">Từ loại: Động từ</p>
+                  <div class="fc-example-box">
+                    <p class="fc-ex-cn">老师，明天见，再见！</p>
+                    <p class="fc-ex-pinyin">Lǎoshī, míngtiān jiàn, zàijiàn!</p>
+                    <p class="fc-ex-vn">Thưa thầy, mai gặp lại, tạm biệt thầy!</p>
+                  </div>
+                </div>
+                <div class="card-footer-back">
+                  <span class="memory-tip"><i class="fa-regular fa-lightbulb"></i> Mẹo nhớ: Tái (再 - lại) + Kiến (见 -
+                    gặp gỡ)</span>
+                </div>
+              </div>
+            </label>
+          </div>
+
+          <!-- THẺ 4: 学习 -->
+          <div class="flashcard-box">
+            <input type="checkbox" id="fc-check-4" class="flashcard-toggle" hidden>
+            <label for="fc-check-4" class="flashcard-flipper" aria-label="Thẻ từ vựng Xue xi">
+              <div class="flashcard-front">
+                <div class="card-badge-top">
+                  <span class="hsk-badge">HSK 1</span>
+                  <span class="flip-hint"><i class="fa-solid fa-rotate"></i> Chạm / Rê chuột để lật</span>
+                </div>
+                <div class="card-body-front">
+                  <span class="fc-pinyin">xué xí</span>
+                  <span class="fc-hanzi">学习</span>
+                  <span class="fc-radical">Bộ thủ: 子 (Tử) & 习 (Tập)</span>
+                </div>
+                <div class="card-footer-front">
+                  <span class="fc-tag-action"><i class="fa-solid fa-circle-question"></i> Mặt trước: Chữ Hán &
+                    Pinyin</span>
+                </div>
+              </div>
+              <div class="flashcard-back">
+                <div class="card-badge-top">
+                  <span class="hsk-badge hsk-badge-gold">Giải Nghĩa</span>
+                  <span class="flip-hint"><i class="fa-solid fa-check"></i> Đang xem nghĩa</span>
+                </div>
+                <div class="card-body-back">
+                  <h3 class="fc-meaning">Học tập, rèn luyện</h3>
+                  <p class="fc-part-of-speech">Từ loại: Động từ</p>
+                  <div class="fc-example-box">
+                    <p class="fc-ex-cn">我们在学校学习汉语。</p>
+                    <p class="fc-ex-pinyin">Wǒmen zài xuéxiào xuéxí hànyǔ.</p>
+                    <p class="fc-ex-vn">Chúng tôi học tiếng Hán ở trường học.</p>
+                  </div>
+                </div>
+                <div class="card-footer-back">
+                  <span class="memory-tip"><i class="fa-regular fa-lightbulb"></i> Mẹo nhớ: Trẻ em (子) luyện tập đôi
+                    cánh (习)</span>
+                </div>
+              </div>
+            </label>
+          </div>
+
+          <!-- THẺ 5: 中国 -->
+          <div class="flashcard-box">
+            <input type="checkbox" id="fc-check-5" class="flashcard-toggle" hidden>
+            <label for="fc-check-5" class="flashcard-flipper" aria-label="Thẻ từ vựng Zhong guo">
+              <div class="flashcard-front">
+                <div class="card-badge-top">
+                  <span class="hsk-badge">HSK 1</span>
+                  <span class="flip-hint"><i class="fa-solid fa-rotate"></i> Chạm / Rê chuột để lật</span>
+                </div>
+                <div class="card-body-front">
+                  <span class="fc-pinyin">zhōng guó</span>
+                  <span class="fc-hanzi">中国</span>
+                  <span class="fc-radical">Bộ thủ: 口 (Khẩu) & 囗 (Vi)</span>
+                </div>
+                <div class="card-footer-front">
+                  <span class="fc-tag-action"><i class="fa-solid fa-circle-question"></i> Mặt trước: Chữ Hán &
+                    Pinyin</span>
+                </div>
+              </div>
+              <div class="flashcard-back">
+                <div class="card-badge-top">
+                  <span class="hsk-badge hsk-badge-gold">Giải Nghĩa</span>
+                  <span class="flip-hint"><i class="fa-solid fa-check"></i> Đang xem nghĩa</span>
+                </div>
+                <div class="card-body-back">
+                  <h3 class="fc-meaning">Trung Quốc, nước Trung Hoa</h3>
+                  <p class="fc-part-of-speech">Từ loại: Danh từ riêng</p>
+                  <div class="fc-example-box">
+                    <p class="fc-ex-cn">我非常想去中国旅游。</p>
+                    <p class="fc-ex-pinyin">Wǒ fēicháng xiǎng qù zhōngguó lǚyóu.</p>
+                    <p class="fc-ex-vn">Tôi rất muốn đi du lịch Trung Quốc.</p>
+                  </div>
+                </div>
+                <div class="card-footer-back">
+                  <span class="memory-tip"><i class="fa-regular fa-lightbulb"></i> Mẹo nhớ: Ở giữa (中) của một quốc gia
+                    bờ cõi (国)</span>
+                </div>
+              </div>
+            </label>
+          </div>
+
+          <!-- THẺ 6: 朋友 -->
+          <div class="flashcard-box">
+            <input type="checkbox" id="fc-check-6" class="flashcard-toggle" hidden>
+            <label for="fc-check-6" class="flashcard-flipper" aria-label="Thẻ từ vựng Peng you">
+              <div class="flashcard-front">
+                <div class="card-badge-top">
+                  <span class="hsk-badge">HSK 1</span>
+                  <span class="flip-hint"><i class="fa-solid fa-rotate"></i> Chạm / Rê chuột để lật</span>
+                </div>
+                <div class="card-body-front">
+                  <span class="fc-pinyin">péng you</span>
+                  <span class="fc-hanzi">朋友</span>
+                  <span class="fc-radical">Bộ thủ: 月 (Nguyệt) & 又 (Hựu)</span>
+                </div>
+                <div class="card-footer-front">
+                  <span class="fc-tag-action"><i class="fa-solid fa-circle-question"></i> Mặt trước: Chữ Hán &
+                    Pinyin</span>
+                </div>
+              </div>
+              <div class="flashcard-back">
+                <div class="card-badge-top">
+                  <span class="hsk-badge hsk-badge-gold">Giải Nghĩa</span>
+                  <span class="flip-hint"><i class="fa-solid fa-check"></i> Đang xem nghĩa</span>
+                </div>
+                <div class="card-body-back">
+                  <h3 class="fc-meaning">Bạn bè, bạn hữu</h3>
+                  <p class="fc-part-of-speech">Từ loại: Danh từ</p>
+                  <div class="fc-example-box">
+                    <p class="fc-ex-cn">我们是一辈子的好朋友。</p>
+                    <p class="fc-ex-pinyin">Wǒmen shì yībèizi de hǎo péngyou.</p>
+                    <p class="fc-ex-vn">Chúng ta là bạn tốt của nhau cả đời.</p>
+                  </div>
+                </div>
+                <div class="card-footer-back">
+                  <span class="memory-tip"><i class="fa-regular fa-lightbulb"></i> Mẹo nhớ: Hai vầng trăng (朋) song hành
+                    cùng nhau</span>
+                </div>
+              </div>
+            </label>
+          </div>
+
+          <!-- THẺ 7: 老师 -->
+          <div class="flashcard-box">
+            <input type="checkbox" id="fc-check-7" class="flashcard-toggle" hidden>
+            <label for="fc-check-7" class="flashcard-flipper" aria-label="Thẻ từ vựng Lao shi">
+              <div class="flashcard-front">
+                <div class="card-badge-top">
+                  <span class="hsk-badge">HSK 1</span>
+                  <span class="flip-hint"><i class="fa-solid fa-rotate"></i> Chạm / Rê chuột để lật</span>
+                </div>
+                <div class="card-body-front">
+                  <span class="fc-pinyin">lǎo shī</span>
+                  <span class="fc-hanzi">老师</span>
+                  <span class="fc-radical">Bộ thủ: 耂 (Lão) & 巾 (Cân)</span>
+                </div>
+                <div class="card-footer-front">
+                  <span class="fc-tag-action"><i class="fa-solid fa-circle-question"></i> Mặt trước: Chữ Hán &
+                    Pinyin</span>
+                </div>
+              </div>
+              <div class="flashcard-back">
+                <div class="card-badge-top">
+                  <span class="hsk-badge hsk-badge-gold">Giải Nghĩa</span>
+                  <span class="flip-hint"><i class="fa-solid fa-check"></i> Đang xem nghĩa</span>
+                </div>
+                <div class="card-body-back">
+                  <h3 class="fc-meaning">Thầy cô giáo, giáo viên</h3>
+                  <p class="fc-part-of-speech">Từ loại: Danh từ</p>
+                  <div class="fc-example-box">
+                    <p class="fc-ex-cn">李老师教我们汉语。</p>
+                    <p class="fc-ex-pinyin">Lǐ lǎoshī jiāo wǒmen hànyǔ.</p>
+                    <p class="fc-ex-vn">Thầy Lý dạy chúng tôi tiếng Hán.</p>
+                  </div>
+                </div>
+                <div class="card-footer-back">
+                  <span class="memory-tip"><i class="fa-regular fa-lightbulb"></i> Mẹo nhớ: Người có kinh nghiệm uyên
+                    thâm (老) dẫn dắt, chỉ lối (师)</span>
+                </div>
+              </div>
+            </label>
+          </div>
+
+          <!-- THẺ 8: 喝茶 -->
+          <div class="flashcard-box">
+            <input type="checkbox" id="fc-check-8" class="flashcard-toggle" hidden>
+            <label for="fc-check-8" class="flashcard-flipper" aria-label="Thẻ từ vựng He cha">
+              <div class="flashcard-front">
+                <div class="card-badge-top">
+                  <span class="hsk-badge">HSK 1</span>
+                  <span class="flip-hint"><i class="fa-solid fa-rotate"></i> Chạm / Rê chuột để lật</span>
+                </div>
+                <div class="card-body-front">
+                  <span class="fc-pinyin">hē chá</span>
+                  <span class="fc-hanzi">喝茶</span>
+                  <span class="fc-radical">Bộ thủ: 口 (Khẩu) & 艹 (Thảo)</span>
+                </div>
+                <div class="card-footer-front">
+                  <span class="fc-tag-action"><i class="fa-solid fa-circle-question"></i> Mặt trước: Chữ Hán &
+                    Pinyin</span>
+                </div>
+              </div>
+              <div class="flashcard-back">
+                <div class="card-badge-top">
+                  <span class="hsk-badge hsk-badge-gold">Giải Nghĩa</span>
+                  <span class="flip-hint"><i class="fa-solid fa-check"></i> Đang xem nghĩa</span>
+                </div>
+                <div class="card-body-back">
+                  <h3 class="fc-meaning">Uống trà, thưởng trà</h3>
+                  <p class="fc-part-of-speech">Từ loại: Cụm động từ</p>
+                  <div class="fc-example-box">
+                    <p class="fc-ex-cn">中国人都非常喜欢喝热茶。</p>
+                    <p class="fc-ex-pinyin">Zhōngguó rén dōu fēicháng xǐhuan hē rè chá.</p>
+                    <p class="fc-ex-vn">Người Trung Quốc đều rất thích uống trà nóng.</p>
+                  </div>
+                </div>
+                <div class="card-footer-back">
+                  <span class="memory-tip"><i class="fa-regular fa-lightbulb"></i> Mẹo nhớ: Dùng miệng (口) thưởng thức
+                    lá cỏ cây (艹) thanh tao</span>
+                </div>
+              </div>
+            </label>
+          </div>
+
+
+        </div>
+
+        <div class="flip-instruction-note">
+          <p><i class="fa-solid fa-circle-info"></i> Hiệu ứng 3D CSS thuần: Di chuột qua thẻ để lật, hoặc
+            chạm/click vào thẻ trên điện thoại để khóa góc nhìn.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: KHÓA HỌC TIÊU BIỂU (COURSES) -->
+    <section class="courses-section" id="courses" data-aos="fade-up" aria-labelledby="courses-title">
+      <div class="section-container">
+        <header class="section-header">
+          <span class="section-tag">Chương Trình Đào Tạo</span>
+          <h2 class="section-title" id="courses-title">Khóa Học Tiếng Trung Toàn Diện</h2>
+          <p class="section-description">Được thiết kế bài bản từ con số 0 đến tự tin giao tiếp và thi đậu chứng chỉ HSK
+            quốc tế.</p>
+        </header>
+
+        <div class="courses-grid">
+
+          <article class="course-card" data-aos="fade-up">
+            <div class="course-badge">Phổ Biến Nhất</div>
+            <h3 class="course-name">Tiếng Trung Sơ Cấp (HSK 1 - 2)</h3>
+            <p class="course-intro">Dành cho người mới bắt đầu từ con số 0. Chuẩn hóa ngữ âm, học 300 từ vựng và giao
+              tiếp cơ bản.</p>
+            <ul class="course-highlights">
+              <li><i class="fa-solid fa-check"></i> Phát âm Pinyin chuẩn xác 100%</li>
+              <li><i class="fa-solid fa-check"></i> Nắm vững quy tắc bút thuận chữ Hán</li>
+              <li><i class="fa-solid fa-check"></i> Tự tin giao tiếp các tình huống thường ngày</li>
+            </ul>
+            <div class="course-pricing">
+              <span class="price-current">1.490.000 ₫</span>
+              <span class="price-original">2.200.000 ₫</span>
+            </div>
+            <a href="#contact" class="btn btn-course">Đăng Ký Khóa Này</a>
+          </article>
+
+          <article class="course-card featured-course" data-aos="fade-up">
+            <div class="course-badge hot-badge">Khuyên Dùng</div>
+            <h3 class="course-name">Tiếng Trung Trung Cấp (HSK 3 - 4)</h3>
+            <p class="course-intro">Tăng tốc từ vựng lên 1.200 từ, phản xạ giao tiếp trôi chảy và luyện đề thi HSK cam
+              kết đầu ra.</p>
+            <ul class="course-highlights">
+              <li><i class="fa-solid fa-check"></i> Làm chủ ngữ pháp phức & liên từ</li>
+              <li><i class="fa-solid fa-check"></i> Thuyết trình và viết đoạn văn trôi chảy</li>
+              <li><i class="fa-solid fa-check"></i> Cam kết đỗ chứng chỉ HSK 4 quốc tế</li>
+            </ul>
+            <div class="course-pricing">
+              <span class="price-current">2.890.000 ₫</span>
+              <span class="price-original">3.800.000 ₫</span>
+            </div>
+            <a href="#contact" class="btn btn-primary">Đăng Ký Ưu Đãi</a>
+          </article>
+
+          <article class="course-card" data-aos="fade-up">
+            <div class="course-badge">Chuyên Sâu</div>
+            <h3 class="course-name">Giao Tiếp Thương Mại & Du Lịch</h3>
+            <p class="course-intro">Chuyên sâu đàm phán hợp đồng, xuất nhập khẩu, gặp gỡ đối tác Trung Quốc và xử lý
+              công việc.</p>
+            <ul class="course-highlights">
+              <li><i class="fa-solid fa-check"></i> Thuật ngữ thương mại và hóa đơn chứng từ</li>
+              <li><i class="fa-solid fa-check"></i> Kỹ năng viết email và đàm phán giá</li>
+              <li><i class="fa-solid fa-check"></i> Văn hóa kinh doanh của người Hoa</li>
+            </ul>
+            <div class="course-pricing">
+              <span class="price-current">3.490.000 ₫</span>
+              <span class="price-original">4.500.000 ₫</span>
+            </div>
+            <a href="#contact" class="btn btn-course">Đăng Ký Khóa Này</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5B: UY TÍN & CHỨNG NHẬN (TRUST & GALLERY) -->
+    <section class="trust-section" id="trust" data-aos="fade-up" aria-labelledby="trust-title">
+      <div class="section-container">
+        <header class="section-header">
+          <span class="section-tag">Minh Chứng Thực Tiễn</span>
+          <h2 class="section-title" id="trust-title">Vì Sao Hơn 10.000 Học Viên Tin Tưởng Chúng Tôi?</h2>
+          <p class="section-description">Kết quả thực chất từ lớp học thực tế – bằng chứng từ học viên đã thành công.
+          </p>
+        </header>
+
+        <!-- Lưới hình ảnh uy tín 3 cột -->
+        <div class="trust-gallery-grid">
+
+          <!-- Ảnh 1: Lớp học thực tế (nhân thẩy giáo và học viên) -->
+          <figure class="trust-gallery-item trust-gallery-large" data-aos="fade-right">
+            <img src="assets/images/classroom-teaching.jpg"
+              alt="Lớp học tiếng Trung thực tế tại Hoa Ngữ Tinh Hoa – giáo viên hướng dẫn học viên"
+              class="trust-gallery-img" loading="lazy">
+            <figcaption class="trust-gallery-caption">
+              <i class="fa-solid fa-camera"></i> Lớp học thực tế tại trung tâm
+            </figcaption>
+          </figure>
+
+          <!-- Cột phải: 2 ảnh nhỏ -->
+          <div class="trust-gallery-col">
+
+            <figure class="trust-gallery-item" data-aos="fade-left" data-aos-delay="100">
+              <img src="assets/images/students-success.jpg"
+                alt="Học viên mừng đậu chứng chỉ HSK quốc tế tại Hoa Ngữ Tinh Hoa" class="trust-gallery-img"
+                loading="lazy">
+              <figcaption class="trust-gallery-caption">
+                <i class="fa-solid fa-trophy"></i> Học viên mừng đậu HSK quốc tế
+              </figcaption>
+            </figure>
+
+            <figure class="trust-gallery-item" data-aos="fade-left" data-aos-delay="200">
+              <img src="assets/images/trust-certificates.jpg"
+                alt="Tường bằng khen và chứng chỉ HSK tại Hoa Ngữ Tinh Hoa" class="trust-gallery-img" loading="lazy">
+              <figcaption class="trust-gallery-caption">
+                <i class="fa-solid fa-certificate"></i> Tường vinh danh bằng khen & chứng chỉ HSK
+              </figcaption>
+            </figure>
+
+          </div>
+        </div>
+
+        <!-- Dải thống kê uy tín -->
+        <div class="trust-stats-bar" data-aos="fade-up">
+          <div class="trust-stat">
+            <i class="fa-solid fa-users"></i>
+            <strong>10.000+</strong>
+            <span>Học viên đã tốt nghiệp</span>
+          </div>
+          <div class="trust-stat-divider" aria-hidden="true"></div>
+          <div class="trust-stat">
+            <i class="fa-solid fa-medal"></i>
+            <strong>98%</strong>
+            <span>Tỷ lệ đậu chứng chỉ HSK</span>
+          </div>
+          <div class="trust-stat-divider" aria-hidden="true"></div>
+          <div class="trust-stat">
+            <i class="fa-solid fa-chalkboard-teacher"></i>
+            <strong>15+</strong>
+            <span>Giáo viên bản ngữ & Việt Nam</span>
+          </div>
+          <div class="trust-stat-divider" aria-hidden="true"></div>
+          <div class="trust-stat">
+            <i class="fa-solid fa-calendar-check"></i>
+            <strong>8 Năm</strong>
+            <span>Kinh nghiệm đào tạo</span>
+          </div>
+        </div>
+
+        <!-- Testimonials từ học viên -->
+        <div class="testimonials-grid" data-aos="fade-up">
+
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 sao">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote class="testimonial-text">
+              "Sau 4 tháng học tại đây, mình đã thi đậu HSK 4 với điểm 267/300! Phương pháp chiết tự giúp nhớ chữ Hán
+              cực nhanh, giáo viên nhiệt tình và lớp học không khí rất vui."
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">NT</div>
+              <div>
+                <strong>Nguyễn Thị Thu Hà</strong>
+                <span>Học viên HSK 4 – Khóa 2025</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card testimonial-featured">
+            <div class="testimonial-stars" aria-label="5 sao">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote class="testimonial-text">
+              "Mình đi làm ở công ty Trung Quốc, cần giao tiếp thương mại. Chỉ 3 tháng học khóa Thương Mại ở đây là tự
+              tin đàm phán hợp đồng và viết email bằng tiếng Hoa rồi!"
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">PV</div>
+              <div>
+                <strong>Phạm Văn Minh</strong>
+                <span>Nhân viên XNK – Khóa Thương Mại 2025</span>
+              </div>
+            </footer>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-stars" aria-label="5 sao">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <blockquote class="testimonial-text">
+              "Đăng ký vì bộ Flashcard 3D trên web quá hay. Vào học thực tế thì còn tuyệt hơn! Thầy cô rất tâm huyết,
+              lịch học linh động phù hợp với người đi làm như mình."
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">LB</div>
+              <div>
+                <strong>Lê Thị Bảo Châu</strong>
+                <span>Freelancer – Khóa Sơ Cấp HSK 1-2</span>
+              </div>
+            </footer>
+          </article>
+
+        </div>
+
+        <!-- Dải logo đối tác / truyền thông -->
+        <div class="media-trust-bar" data-aos="fade-up">
+          <p class="media-trust-label">Được tin tưởng & đề cập bởi</p>
+          <div class="media-logos">
+            <span class="media-logo-item"><i class="fa-solid fa-tv"></i> VTV Education</span>
+            <span class="media-logo-item"><i class="fa-solid fa-newspaper"></i> Tuổi Trẻ Online</span>
+            <span class="media-logo-item"><i class="fa-solid fa-graduation-cap"></i> Bộ GD&amp;ĐT</span>
+            <span class="media-logo-item"><i class="fa-solid fa-building-columns"></i> Đại Học Hà Nội</span>
+            <span class="media-logo-item"><i class="fa-solid fa-award"></i> HSK Official</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: FORM LIÊN HỆ ĐĂNG KÝ KHÓA HỌC (SEMANTIC FORM) -->
+    <section class="contact-section" id="contact" data-aos="fade-up" aria-labelledby="contact-title">
+      <div class="section-container">
+        <div class="contact-layout">
+
+          <aside class="contact-info-panel">
+            <span class="section-tag">Đăng Ký Tư Vấn</span>
+            <h2 class="section-title" id="contact-title">Bắt Đầu Chặng Đường Học Tiếng Trung Hôm Nay</h2>
+            <p class="contact-lead">Để lại thông tin để nhận tư vấn lộ trình học phù hợp nhất và nhận ngay <strong>Bộ
+                tài liệu 600 từ vựng HSK kèm Audio</strong> hoàn toàn miễn phí!</p>
+
+            <div class="info-list">
+              <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <strong>Địa chỉ trung tâm</strong>
+                  <p>Số 88 Đường Hoa Lan, Quận Phú Nhuận, TP. Hồ Chí Minh</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-phone-volume"></i>
+                <div>
+                  <strong>Hotline hỗ trợ 24/7</strong>
+                  <p>0988 123 456 - (028) 3899 9999</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-envelope-open-text"></i>
+                <div>
+                  <strong>Email liên hệ</strong>
+                  <p>tuvan@hoangutinhhoa.edu.vn</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="guarantee-box">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>Cam kết học thử miễn phí 02 buổi đầu tiên & hoàn tiền nếu không hài lòng.</span>
+            </div>
+          </aside>
+
+          <!-- Form đăng ký semantic với validation chuẩn HTML5 thuần -->
+          <div class="contact-form-wrapper">
+            <form class="registration-form" action="#contact" method="get">
+              <h3 class="form-title">Biểu Mẫu Đăng Ký Khóa Học</h3>
+
+              <div class="form-group">
+                <label for="fullName" class="form-label">
+                  <i class="fa-solid fa-user"></i> Họ và tên <span class="required">*</span>
+                </label>
+                <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Ví dụ: Nguyễn Văn An"
+                  required>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phoneNumber" class="form-label">
+                    <i class="fa-solid fa-phone"></i> Số điện thoại <span class="required">*</span>
+                  </label>
+                  <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="0901234567"
+                    required pattern="^(0[3|5|7|8|9])+([0-9]{8})$">
+                </div>
+
+                <div class="form-group">
+                  <label for="emailAddress" class="form-label">
+                    <i class="fa-solid fa-envelope"></i> Email cá nhân <span class="required">*</span>
+                  </label>
+                  <input type="email" id="emailAddress" name="emailAddress" class="form-control"
+                    placeholder="tenban@email.com" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="courseSelect" class="form-label">
+                    <i class="fa-solid fa-book"></i> Khóa học quan tâm <span class="required">*</span>
+                  </label>
+                  <select id="courseSelect" name="courseSelect" class="form-control" required>
+                    <option value="">-- Lựa chọn khóa học --</option>
+                    <option value="HSK1-2">Tiếng Trung Sơ Cấp (HSK 1 - 2)</option>
+                    <option value="HSK3-4">Tiếng Trung Trung Cấp (HSK 3 - 4)</option>
+                    <option value="TM-DL">Giao Tiếp Thương Mại & Du Lịch</option>
+                    <option value="1on1">Luyện thi HSKK & Đàm Thoại 1 kèm 1</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="studyTime" class="form-label">
+                    <i class="fa-solid fa-clock"></i> Khung giờ học tiện lợi
+                  </label>
+                  <select id="studyTime" name="studyTime" class="form-control">
+                    <option value="2-4-6">Tối 2-4-6 (19h30 - 21h00)</option>
+                    <option value="3-5-7">Tối 3-5-7 (19h30 - 21h00)</option>
+                    <option value="weekend">Cuối tuần T7 & CN (Sáng/Chiều)</option>
+                    <option value="flexible">Học linh động kèm riêng</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="userNotes" class="form-label">
+                  <i class="fa-solid fa-message"></i> Lời nhắn hoặc mục tiêu của bạn
+                </label>
+                <textarea id="userNotes" name="userNotes" class="form-control" rows="3"
+                  placeholder="Ví dụ: Mình muốn thi HSK 3 trong 4 tháng để đi du học Trung Quốc..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit-form">
+                <i class="fa-solid fa-paper-plane"></i> Gửi Đăng Ký Tư Vấn Miễn Phí
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer" id="footer">
+    <div class="section-container">
+      <div class="footer-grid">
+
+        <div class="footer-col footer-about">
+          <div class="footer-logo">
+            <span class="logo-chinese">华语</span>
+            <span class="logo-text">Hoa Ngữ <strong>Tinh Hoa</strong></span>
+          </div>
+          <p class="footer-desc">
+            Nền tảng học tiếng Trung trực tuyến hàng đầu, giúp bạn tiếp cận ngôn ngữ Trung Hoa một cách trực quan, hứng
+            khởi và đạt kết quả thực chất.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="social-link" aria-label="WeChat"><i class="fa-brands fa-weixin"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Chương Trình Học</h4>
+          <ul class="footer-links">
+            <li><a href="#vocabulary">Từ Vựng HSK 1 - 2</a></li>
+            <li><a href="#flashcards">Bộ Thẻ Flashcard 3D</a></li>
+            <li><a href="#courses">Luyện Thi HSK 3 - 4</a></li>
+            <li><a href="#courses">Tiếng Trung Thương Mại</a></li>
+            <li><a href="#courses">Khóa Học 1 Kèm 1</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Tài Liệu Hữu Ích</h4>
+          <ul class="footer-links">
+            <li><a href="#">Bảng 214 Bộ Thủ Thường Gặp</a></li>
+            <li><a href="#">Bảng Phiên Âm Pinyin Chi Tiết</a></li>
+            <li><a href="#">Đề Thi Thử HSK Các Cấp</a></li>
+            <li><a href="#">Bí Quyết Nhớ Hán Tự Nhanh</a></li>
+            <li><a href="#">Chính Sách & Bảo Mật</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Thông Tin Sinh Viên</h4>
+          <p class="footer-info-text">
+            <strong>Dự án:</strong> Website Học Tiếng Trung Cơ Bản<br>
+            <strong>Tác giả:</strong> Phan Thanh Sơn<br>
+            <strong>MSSV:</strong> 125000277<br>
+            <strong>Lớp:</strong> Frontend Web Design<br>
+            <strong>Tiêu chuẩn:</strong> 100% HTML5 & CSS3 Thuần (Không JavaScript)
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hoa Ngữ Tinh Hoa - Phan Thanh Sơn (125000277). Đã đăng ký bản quyền toàn bộ nội dung.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== CỤM NÚT TIỆN ÍCH NỔI (FLOATING CONTACT BAR MÀU ĐỎ & HIỆU ỨNG TỎA RA) ==================== -->
+  <aside class="floating-contact-group" aria-label="Tiện ích liên hệ nhanh">
+    <!-- Nút 1: Hotline Gọi Điện (Hiệu ứng tỏa ra & chuông rung) -->
+    <div class="float-btn-wrapper">
+      <div class="pulse-ring pulse-ring-1" aria-hidden="true"></div>
+      <div class="pulse-ring pulse-ring-2" aria-hidden="true"></div>
+      <div class="pulse-ring pulse-ring-3" aria-hidden="true"></div>
+      <a href="tel:0988123456" class="float-btn float-btn-phone" aria-label="Gọi hotline: 0988 123 456">
+        <span class="float-halo" aria-hidden="true"></span>
+        <span class="float-inner-circle">
+          <i class="fa-solid fa-phone"></i>
+        </span>
+        <span class="float-tooltip">Hotline: 0988 123 456</span>
+      </a>
+    </div>
+
+    <!-- Nút 2: Chat Zalo (Hiệu ứng tỏa ra) -->
+    <div class="float-btn-wrapper">
+      <div class="pulse-ring pulse-ring-1" aria-hidden="true"></div>
+      <div class="pulse-ring pulse-ring-2" aria-hidden="true"></div>
+      <div class="pulse-ring pulse-ring-3" aria-hidden="true"></div>
+      <a href="https://zalo.me/0988123456" target="_blank" rel="noopener noreferrer" class="float-btn float-btn-zalo"
+        aria-label="Chat qua Zalo tư vấn">
+        <span class="float-halo" aria-hidden="true"></span>
+        <span class="float-inner-circle">
+          <svg class="float-svg-icon" viewBox="0 0 40 40" width="28" height="28" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true">
+            <path
+              d="M20 7C12.8 7 7 12.2 7 18.6C7 22 8.6 25 11.1 27.1C10.8 28.7 10.1 30.8 9.3 32.3C9.1 32.7 9.5 33.2 9.9 33C12.1 32.2 14.8 31.1 16.7 30.2C17.7 30.5 18.8 30.6 20 30.6C27.2 30.6 33 25.4 33 18.6C33 12.2 27.2 7 20 7Z"
+              fill="#ffffff" />
+            <text x="19.5" y="20.2" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif"
+              font-weight="900" font-size="9" fill="#c8102e" text-anchor="middle" dominant-baseline="middle"
+              letter-spacing="-0.4">Zalo</text>
+          </svg>
+        </span>
+        <span class="float-tooltip">Chat Zalo: 0988 123 456</span>
+      </a>
+    </div>
+
+    <!-- Nút 3: Gửi Tin Nhắn / Đăng Ký (Hiệu ứng tỏa ra) -->
+    <div class="float-btn-wrapper">
+      <div class="pulse-ring pulse-ring-1" aria-hidden="true"></div>
+      <div class="pulse-ring pulse-ring-2" aria-hidden="true"></div>
+      <div class="pulse-ring pulse-ring-3" aria-hidden="true"></div>
+      <a href="#contact" class="float-btn float-btn-message" aria-label="Gửi tin nhắn tư vấn khóa học">
+        <span class="float-halo" aria-hidden="true"></span>
+        <span class="float-inner-circle">
+          <svg class="float-svg-icon" viewBox="0 0 40 40" width="28" height="28" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true">
+            <path
+              d="M20 7C12.8 7 7 12.2 7 18.6C7 22 8.6 25 11.1 27.1C10.8 28.7 10.1 30.8 9.3 32.3C9.1 32.7 9.5 33.2 9.9 33C12.1 32.2 14.8 31.1 16.7 30.2C17.7 30.5 18.8 30.6 20 30.6C27.2 30.6 33 25.4 33 18.6C33 12.2 27.2 7 20 7Z"
+              fill="#ffffff" />
+            <circle cx="14" cy="18.5" r="2.1" fill="#c8102e" />
+            <circle cx="20" cy="18.5" r="2.1" fill="#c8102e" />
+            <circle cx="26" cy="18.5" r="2.1" fill="#c8102e" />
+          </svg>
+        </span>
+        <span class="float-tooltip">Để lại tin nhắn tư vấn</span>
+      </a>
+    </div>
+
+    <!-- Nút 4: Cuộn Lên Đầu Trang -->
+    <a href="#header" class="float-btn-top" aria-label="Cuộn lên đầu trang">
+      <i class="fa-solid fa-chevron-up"></i>
+      <span class="float-tooltip">Lên đầu trang</span>
+    </a>
+  </aside>
+
+</body>
+
+</html>
